@@ -2,16 +2,92 @@
 
 :root{
 --main_BG: hsl(217, 54%, 11%)
---card_BG: hsl(216, 50%, 16%)
---line: hsl(215, 32%, 27%)
---White: hsl(0, 0%, 100%)
---Soft_blue: hsl(215, 51%, 70%)
---Cyan: hsl(178, 100%, 50%)
+--card_BG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--Soft_blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
 }
 
+ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+}
+
+
+.container{
+  background: hsl(217, 54%, 11%);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+   width: 320px;
+    background: hsl(216, 50%, 16%) ;
+    padding: 20px 15px;
+      border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+   
+}
+
+.card_img{
+  width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-box h1{
+   font-size: 20px;
+    font-weight: 600;
+    color:  hsl(0, 0%, 100%);
+    margin: 15px 0;
+}
+
+.card-box p{
+  font-size: 18px;
+    font-weight: 100;
+    color: hsl(215, 51%, 70%);
+}
+
+.card__info{
+  display: flex;
+  gap: 20px;
+
+}
+
+.ethereum-icon{
+  display: flex;
+}
+
+.clock-icon{
+  display: flex;
+}
+
+.card_meta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card_meta img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    border: 2px solid hsl(0, 0%, 100%);
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
 }
